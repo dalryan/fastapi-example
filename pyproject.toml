@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "fastapi-example"
+version = "0.1.0"
+description = "some description"
+authors = ["Ryan Dalton <110407320+dalryan@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+uvicorn = "^0.29.0"
+sentry-sdk = {extras = ["fastapi"], version = "^2.3.1"}
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+pytest = "^8.2.1"
+ruff = "^0.4.5"
+
+
+[tool.ruff]
+target-version = "py311"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
