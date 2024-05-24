@@ -24,6 +24,8 @@ ruff = "^0.4.5"
 
 [tool.ruff]
 target-version = "py311"
+lint.extend-select = ["I"]
+
 
 
 [build-system]

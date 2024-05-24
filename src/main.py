@@ -3,16 +3,15 @@
 It creates an APIRouter and adds each of the individual versioned routers to it
 """
 
-from typing import AsyncGenerator
-
-from src.core.logging import logger
 from contextlib import asynccontextmanager
+from typing import AsyncGenerator
 
 import sentry_sdk
 from fastapi import FastAPI
+
 from src.api.v1.api import api_router_v1
 from src.core.config import settings
-
+from src.core.logging import logger
 
 if settings.ENVIRONMENT != "local":
     sentry_sdk.init(
