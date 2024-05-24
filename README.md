@@ -1,5 +1,6 @@
 # Example FastAPI Project
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dalryan/fastapi-example/ci-checks.yml)
 
 This is a simple template for FastAPI projects. 
 It contains the bare minimum needed to get started developing a modern async Python web API.
