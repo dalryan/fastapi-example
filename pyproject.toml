@@ -13,7 +13,7 @@ fastapi = "^0.111.0"
 pydantic = "^2.7.1"
 pydantic-settings = "^2.2.1"
 uvicorn = "^0.29.0"
-sentry-sdk = {extras = ["fastapi"], version = "^2.3.1"}
+sentry-sdk = {extras = ["fastapi"], version = "^2.8.0"}
 
 
 [tool.poetry.group.dev.dependencies]
